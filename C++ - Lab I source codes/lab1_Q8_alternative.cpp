@@ -12,28 +12,28 @@ using namespace std;
 class Student
 {
 public:
-  char name[30];
-  int marks1, marks2;
+    char name[30];
+    int marks1, marks2;
 
-  void calc_media()
-  {
-    cout << "Enter the name:" << endl;
-    cin >> name;
-    cout << "Enter marks of two subjects:" << endl;
-    cin >> marks1 >> marks2;
-  }
+    void calc_media()
+    {
+        cout << "Enter the name:" << endl;
+        cin >> name;
+        cout << "Enter marks of two subjects:" << endl;
+        cin >> marks1 >> marks2;
+    }
 
-  void disp_media()
-  {
-    cout <<"Student: "<<name<<endl;
-    cout<< "Total marks: " << marks1+marks2 << endl; // directly displaying the total marks
-  }
+    void disp_media()
+    {
+        cout << "Student: " << name << endl;
+        cout << "Total marks: " << marks1 + marks2 << endl; // directly displaying the total marks
+    }
 };
 
 int main()
 {
-  Student myObj;
-  myObj.calc_media();
-  myObj.disp_media();
-  return 0;
+    Student myObj;
+    myObj.calc_media();
+    myObj.disp_media();
+    return 0;
 }
