@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 
-int factorial(int n){
-	int i;
+int main(){
+	int i,n;
 	int fact = 1;
 	cout<<"Give a number \n";
 	cin>>n;
@@ -10,6 +10,6 @@ int factorial(int n){
 		fact = fact*i;
 	}
 	cout<<fact<<endl;
-	return factorial;
+	return 0;
 }
 
