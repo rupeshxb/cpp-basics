@@ -27,14 +27,15 @@ int main(){
   student_2.phone = "1414156123";
   student_2.address = "Tinkune";
 
-  cout<<"The roll of "<<student_1.name<<" is:"<<student_1.roll<<endl;
-  cout<<"The phone no. of: "<<student_1.name<<" is: "<<student_1.phone<<endl;
-  cout<<"The address of: "<<student_1.name<<" is: "<<student_1.address<<endl;
+  cout<<"The details of "<<student_1.name<<" are: "<<endl;
+  cout<<"Roll: "<<student_1.roll<<endl;
+  cout<<"Phone: "<<student_1.phone<<endl;
+  cout<<"Address: "<<student_1.address<<"\n \n";
 
-  cout<<"The roll of "<<student_2.name<<" is: "<<student_2.roll<<endl;
-  cout<<"The phone no. of: "<<student_2.name<<" is: "<<student_2.phone<<endl;
-  cout<<"The address of: "<<student_2.name<<" is: "<<student_2.address<<endl;
-
+  cout<<"The details of "<<student_1.name<<" are:"<<endl;
+  cout<<"Roll: "<<student_2.roll<<endl;
+  cout<<"Phone: "<<student_2.phone<<endl;
+  cout<<"Address: "<<student_2.address<<endl;
   return 0;
 }
 

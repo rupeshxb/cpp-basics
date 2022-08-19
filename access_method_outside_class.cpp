@@ -1,3 +1,5 @@
+// Program that shows accessing a method that is defined outside a class.
+
 #include<iostream>
 using namespace std;
 

@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void area_rect();
+void area_rect(); //prototype
 
 int main(){
 	area_rect();

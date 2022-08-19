@@ -1,5 +1,7 @@
+// Program that 
+
 #include<iostream>
-#include<math.h>
+#include<math.h> // pow() is defined in this header
 using namespace std;
 
 int main(){

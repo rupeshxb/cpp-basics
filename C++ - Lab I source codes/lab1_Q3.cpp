@@ -14,8 +14,8 @@ class Triangle{
     float s;
 
     /* Function to calculate and display perimeter using pass by reference*/
-    void showPeri(int &a, int &b, int &c){
-        perimeter = a+b+c;
+    void showPeri(int &x, int &y, int &z){
+        perimeter = x+y+z;
         cout<<"The perimeter of triangle is:"<<perimeter<<endl;
         return;
     }
@@ -32,7 +32,7 @@ class Triangle{
 int main(){
   Triangle x1; //x1 is a an object
   int a=3,b=4,c=5;
-  x1.showPeri(a,b,c); // pass by reference
-  x1.showArea(3,4,5); // pass by value
+  x1.showPeri(a,b,c); // passed by reference
+  x1.showArea(3,4,5); // passed by value
   return 0;
 }

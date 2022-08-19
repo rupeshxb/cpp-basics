@@ -14,7 +14,6 @@ class Student
 public:
   char name[30];
   int marks1, marks2;
-  int total; // introducing a new variable to store total
 
   void calc_media()
   {
@@ -22,13 +21,12 @@ public:
     cin >> name;
     cout << "Enter marks of two subjects:" << endl;
     cin >> marks1 >> marks2;
-    total=marks1+marks2;
   }
 
   void disp_media()
   {
-    cout <<name<<endl;
-    cout<< "Total marks:" << total << endl;
+    cout <<"Student: "<<name<<endl;
+    cout<< "Total marks: " << marks1+marks2 << endl; // directly displaying the total marks
   }
 };
 
