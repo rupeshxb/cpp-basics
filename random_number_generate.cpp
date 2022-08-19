@@ -1,25 +1,24 @@
 #include<iostream>
-#include<cstdlib> //carries srand(),rand()
-#include<ctime> // caries time()
+#include<cstdlib> // srand(),rand()
+#include<ctime> // time()
 using namespace std;
 
 int gen_ran(); //prototype
 
 int main(){
-	
 	gen_ran();
 	return 0;
 }
 
 int gen_ran(){
-	srand(time(NULL)); //initializing random seed
+	srand(time(NULL)); //initializing random seed, if this is not done, rand() will produce the same result always
 	int ran_num;
-	int x=10,y=10;
-	cout<<"Enter starting number:"<<endl;
-	cin>>y;
-	cout<<"Enter the range of random numbers"<<endl;
+	int x,y;
+	cout<<"Enter starting number of the range:"<<endl;
 	cin>>x;
-	ran_num = rand()% x + y;
-	cout<<"Random number is:"<<ran_num;
+	cout<<"Enter the total numbers in the range"<<endl;
+	cin>>y;
+	ran_num = rand()% y + x; // Generate any random number between x and (x+y), including x and (x+y)
+	cout<<"Random number between "<<y<<" and "<<x<<" is: "<<ran_num;
 	return 0;
 }
